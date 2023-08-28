@@ -22,3 +22,9 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+/listas_lp2/.classpath
+/listas_lp2/.project
+/listas_lp2/.gitignore
+/listas_lp2/bin
+/listas_lp2/.settings
