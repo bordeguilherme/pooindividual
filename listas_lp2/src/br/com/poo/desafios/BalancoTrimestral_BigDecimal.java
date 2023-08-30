@@ -14,29 +14,15 @@ package br.com.poo.desafios;
 
 import java.math.BigDecimal;
 
-//Exercício 3 - Desafio 1
-public class BalancoTrimestral {
+//Exercício 3 - Desafio 1 (com BigDecimal)
+public class BalancoTrimestral_BigDecimal {
 
 	public static void main(String[] args) {
-		//Integer
-//        Integer gastosJaneiro = 15000;
-//        Integer gastosFevereiro = 23000;
-//        Integer gastosMarco = 17000;
-//        Integer gastosTrimestre = gastosJaneiro + gastosFevereiro + gastosMarco;
-//        System.out.println("Gastos trimestrais usando Integer: " + gastosTrimestre);
-
-        //Double
-//        Double gastosJaneiroDouble = 15000.0;
-//        Double gastosFevereiroDouble = 23000.0;
-//        Double gastosMarcoDouble = 17000.0;
-//        Double gastosTrimestreDouble = gastosJaneiroDouble + gastosFevereiroDouble + gastosMarcoDouble;
-//        System.out.println("Gastos trimestrais usando Double: " + gastosTrimestreDouble);
-
-        //BigDecimal
-        BigDecimal gastosJaneiroBigDecimal = new BigDecimal("15000");
-        BigDecimal gastosFevereiroBigDecimal = new BigDecimal("23000");
-        BigDecimal gastosMarcoBigDecimal = new BigDecimal("17000");
+		BigDecimal gastosJaneiroBigDecimal = new BigDecimal(15000);
+        BigDecimal gastosFevereiroBigDecimal = new BigDecimal(23000);
+        BigDecimal gastosMarcoBigDecimal = new BigDecimal(17000);
         BigDecimal gastosTrimestreBigDecimal = gastosJaneiroBigDecimal.add(gastosFevereiroBigDecimal).add(gastosMarcoBigDecimal);
-        System.out.println("Gastos trimestrais usando BigDecimal: " + gastosTrimestreBigDecimal);
+        System.out.println("Gastos trimestrais: " + gastosTrimestreBigDecimal);
 	}
+
 }
