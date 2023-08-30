@@ -18,21 +18,21 @@ import java.math.BigDecimal;
 public class BalancoTrimestral {
 
 	public static void main(String[] args) {
-		// Usando Integer
+		//Integer
 //        Integer gastosJaneiro = 15000;
 //        Integer gastosFevereiro = 23000;
 //        Integer gastosMarco = 17000;
 //        Integer gastosTrimestre = gastosJaneiro + gastosFevereiro + gastosMarco;
 //        System.out.println("Gastos trimestrais usando Integer: " + gastosTrimestre);
 
-        // Usando Double
+        //Double
 //        Double gastosJaneiroDouble = 15000.0;
 //        Double gastosFevereiroDouble = 23000.0;
 //        Double gastosMarcoDouble = 17000.0;
 //        Double gastosTrimestreDouble = gastosJaneiroDouble + gastosFevereiroDouble + gastosMarcoDouble;
 //        System.out.println("Gastos trimestrais usando Double: " + gastosTrimestreDouble);
 
-        // Usando BigDecimal
+        //BigDecimal
         BigDecimal gastosJaneiroBigDecimal = new BigDecimal("15000");
         BigDecimal gastosFevereiroBigDecimal = new BigDecimal("23000");
         BigDecimal gastosMarcoBigDecimal = new BigDecimal("17000");
