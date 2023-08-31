@@ -4,8 +4,6 @@
 //•Por que você acha que esse foi o resultado apresentado?
 package br.com.poo.aula;
 
-import java.util.Scanner;
-
 public class ExercicioTestCasting2 {
 
 	public static void main(String[] args) {
