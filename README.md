@@ -4,7 +4,7 @@ Utilizando o banco de dados Detran-ST, ou Detran-Serratec, o projeto serve para 
 <br/>
 <br/>
 <div align="center">
-<img src="https://github.com/bordeguilherme/pooindividual/assets/141193384/c7aa2371-1a59-4a7b-af6d-a86ba8c50125" width="500px" />
+<img src="https://github.com/bordeguilherme/pooindividual/assets/141193384/dcada7ca-ad11-446f-abc5-f8bebff44133" width="500px" />
 </div>
 <div align="center">
 Diagrama UML
