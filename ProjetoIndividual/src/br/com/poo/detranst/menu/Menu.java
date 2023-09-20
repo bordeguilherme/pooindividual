@@ -7,41 +7,46 @@ import java.util.Scanner;
 import br.com.poo.detranst.classes.Carro;
 import br.com.poo.detranst.classes.Pessoa;
 import br.com.poo.detranst.io.LeituraEscrita;
+import java.util.logging.Logger;
 
 public class Menu {
+	
+	private static final Logger logger = Logger.getLogger(Menu.class.getName());
 	
 	static Scanner sc = new Scanner(System.in);
 
 	public static void menu() throws IOException {
-		System.out.println(
-				"Menu\n\n[1]\tListar carros\n[2]\tListar proprietários\n[3]\tListar carros de cada pessoa\n[0]\tSair\n\nDigite a opção desejada: ");
+
+		logger.info("Menu\n\n[1]\tListar carros\n[2]\tListar proprietários\n[3]\tListar carros de cada pessoa\n"
+				+ "[0]\tSair\n\nDigite a opção desejada: ");
+		
 		int opc = sc.nextInt();
 
 		switch (opc) {
 		case 1:
-			System.out.println("\n\nLista de carros: ");
+			logger.info("\n\nLista de carros: ");
 			for (Carro c : Carro.mapaCarro.values()) {
-				System.out.println(c.getModelo());
+				logger.info(c.getModelo());
 			}
-			System.out.println("\n\n");
+			logger.info("\n\n");
 			menu();
 			break;
 		case 2:
-			System.out.println("\n\nLista de proprietários: ");
+			logger.info("\n\nLista de proprietários: ");
 			for (Pessoa p : Pessoa.mapaPessoa.values()) {
-				System.out.println(p.getNome());
+				logger.info(p.getNome());
 			}
-			System.out.println("\n\n");
+			logger.info("\n\n");
 			menu();
 			break;
 		case 3:
 			carroPessoa();
 			break;
 		case 0:
-			System.out.println("Volte sempre!");
+			logger.info("Volte sempre!");
 			break;
 		default:
-			System.out.println("Opção inválida!");
+			logger.info("Opção inválida!");
 			menu();
 			break;
 		}
@@ -52,7 +57,7 @@ public class Menu {
 		List<Carro> listaCarro = new ArrayList<>();
 		Pessoa pessoa = null;
 		Carro carro = null;
-		System.out.println(
+		logger.info(
 				"\n\nCarros:\n[1]\tGuilherme Borde Almeida\n[2]\tLeonardo Martins de Almeida\n[3]\tVitória Costa Magalhães Gonçalves"
 				+ "\n[4]\tAline Cristina da Silva Borde\n[5]\tW. Axl Rose\n[6]\tDamiano David\n[7]\tArthur Antunes Coimbra\n"
 				+ "[0]\tVoltar ao menu anterior\n\nDigite a opção desejada: ");
@@ -63,7 +68,7 @@ public class Menu {
 			listaCarro.clear();
 			for (Carro c : Carro.mapaCarro.values()) {
 				if(c.getIdPessoa() == 1) {
-					System.out.println(c.getModelo());
+					logger.info(c.getModelo());
 					listaCarro.add(c);
 				}
 			}
@@ -75,7 +80,7 @@ public class Menu {
 			listaCarro.clear();
 			for (Carro c : Carro.mapaCarro.values()) {
 				if(c.getIdPessoa() == 2) {
-					System.out.println(c.getModelo());
+					logger.info(c.getModelo());
 					listaCarro.add(c);
 				}
 			}
@@ -87,7 +92,7 @@ public class Menu {
 			listaCarro.clear();
 			for (Carro c : Carro.mapaCarro.values()) {
 				if(c.getIdPessoa() == 3) {
-					System.out.println(c.getModelo());
+					logger.info(c.getModelo());
 					listaCarro.add(c);
 				}
 			}
@@ -99,7 +104,7 @@ public class Menu {
 			listaCarro.clear();
 			for (Carro c : Carro.mapaCarro.values()) {
 				if(c.getIdPessoa() == 4) {
-					System.out.println(c.getModelo());
+					logger.info(c.getModelo());
 					listaCarro.add(c);
 				}
 			}
@@ -111,7 +116,7 @@ public class Menu {
 			listaCarro.clear();
 			for (Carro c : Carro.mapaCarro.values()) {
 				if(c.getIdPessoa() == 5) {
-					System.out.println(c.getModelo());
+					logger.info(c.getModelo());
 					listaCarro.add(c);
 				}
 			}
@@ -123,7 +128,7 @@ public class Menu {
 			listaCarro.clear();
 			for (Carro c : Carro.mapaCarro.values()) {
 				if(c.getIdPessoa() == 6) {
-					System.out.println(c.getModelo());
+					logger.info(c.getModelo());
 					listaCarro.add(c);
 				}
 			}
@@ -135,7 +140,7 @@ public class Menu {
 			listaCarro.clear();
 			for (Carro c : Carro.mapaCarro.values()) {
 				if(c.getIdPessoa() == 7) {
-					System.out.println(c.getModelo());
+					logger.info(c.getModelo());
 					listaCarro.add(c);
 				}
 			}
@@ -146,7 +151,7 @@ public class Menu {
 			menu();
 			break;
 		default:
-			System.out.println("Opção inválida!");
+			logger.info("Opção inválida!");
 			carroPessoa();
 			break;
 		}

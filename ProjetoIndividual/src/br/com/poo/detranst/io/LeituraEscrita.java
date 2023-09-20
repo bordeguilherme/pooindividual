@@ -24,13 +24,13 @@ public class LeituraEscrita {
 			linha = buffRead.readLine();
 			if (linha != null) {
 				String[] dados = linha.split(";");
-				if (dados[0].equalsIgnoreCase(SistemaEnum.CARRO.getTipo())) {
-					Carro c = new Carro(Integer.parseInt(dados[1]), dados[2], dados[3], dados[4], Integer.parseInt(dados[5]),
-							dados[6], dados[7], dados[8], Integer.parseInt(dados[9]));
-					Carro.mapaCarro.put(Integer.parseInt(dados[1]), c);
-				} else if (dados[0].equalsIgnoreCase(SistemaEnum.PESSOA.getTipo())) {
+				if (dados[0].equalsIgnoreCase(SistemaEnum.PESSOA.getTipo())) {
 					Pessoa p = new Pessoa(Integer.parseInt(dados[1]), dados[2], dados[3], dados[4], dados[5], dados[6], dados[7]);
 					Pessoa.mapaPessoa.put(Integer.parseInt(dados[1]), p);
+				} else if (dados[0].equalsIgnoreCase(SistemaEnum.CARRO.getTipo())) {
+					Carro c = new Carro(Integer.parseInt(dados[1]), dados[2], dados[3], dados[4], Integer.parseInt(dados[5]),
+					dados[6], dados[7], dados[8], Integer.parseInt(dados[9]));
+					Carro.mapaCarro.put(Integer.parseInt(dados[1]), c);
 				}
 			} else {
 				break;
