@@ -39,13 +39,14 @@ public class LeituraEscrita {
 		buffRead.close();
 	}
 
-	public static void relatorioPessoaCarro(Carro carro, List<Pessoa> pessoa) throws IOException {
-		String Arquivo = carro.getModelo();
-		BufferedWriter buffWrite = new BufferedWriter(new FileWriter(PATH_BASICO + Arquivo + EXTENSAO, true));
+	public static void relatorioPessoaCarro(Carro carro, Pessoa pessoa, List<Pessoa> pessoa1) throws IOException {
+		if (carro != null && pessoa != null) {
+		String path = carro.getModelo() + pessoa.getNome();
+		BufferedWriter buffWrite = new BufferedWriter(new FileWriter(PATH_BASICO + path + EXTENSAO, true));
 		buffWrite.append("*************** Relatório **************\n");
-		buffWrite.append(carro.getModelo() + ":\n\n");
-		if(!pessoa.isEmpty()) {
-			for(Pessoa p : pessoa) {
+		buffWrite.append(carro.getModelo() + " - " + pessoa.getNome() + ":\n\n");
+		if(!pessoa1.isEmpty()) {
+			for(Pessoa p : pessoa1) {
 				buffWrite.append(" - " + p.getNome() + "\n");
 			}
 		} 
@@ -54,6 +55,7 @@ public class LeituraEscrita {
 		buffWrite.append("\nData da programação: " + sdf.format(date) + "\n");
 		buffWrite.append("************* Fim Relatório ************\n");
 		buffWrite.close();
+		}
 	}
 
 }

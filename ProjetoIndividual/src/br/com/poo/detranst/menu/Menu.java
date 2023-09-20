@@ -72,7 +72,7 @@ public class Menu {
 					listaCarro.add(c);
 				}
 			}
-			LeituraEscrita.relatorioPessoaCarro(carro, listaPessoa);
+			LeituraEscrita.relatorioPessoaCarro(carro, pessoa, listaPessoa);
 			carroPessoa();
 			break;
 		case 2:
@@ -84,7 +84,7 @@ public class Menu {
 					listaCarro.add(c);
 				}
 			}
-			LeituraEscrita.relatorioPessoaCarro(carro, listaPessoa);
+			LeituraEscrita.relatorioPessoaCarro(carro, pessoa, listaPessoa);
 			carroPessoa();
 			break;
 		case 3:
@@ -96,7 +96,7 @@ public class Menu {
 					listaCarro.add(c);
 				}
 			}
-			LeituraEscrita.relatorioPessoaCarro(carro, listaPessoa);
+			LeituraEscrita.relatorioPessoaCarro(carro, pessoa, listaPessoa);
 			carroPessoa();
 			break;
 		case 4:
@@ -108,7 +108,7 @@ public class Menu {
 					listaCarro.add(c);
 				}
 			}
-			LeituraEscrita.relatorioPessoaCarro(carro, listaPessoa);
+			LeituraEscrita.relatorioPessoaCarro(carro, pessoa, listaPessoa);
 			carroPessoa();
 			break;
 		case 5:
@@ -120,7 +120,7 @@ public class Menu {
 					listaCarro.add(c);
 				}
 			}
-			LeituraEscrita.relatorioPessoaCarro(carro, listaPessoa);
+			LeituraEscrita.relatorioPessoaCarro(carro, pessoa, listaPessoa);
 			carroPessoa();
 			break;
 		case 6:
@@ -132,7 +132,7 @@ public class Menu {
 					listaCarro.add(c);
 				}
 			}
-			LeituraEscrita.relatorioPessoaCarro(carro, listaPessoa);
+			LeituraEscrita.relatorioPessoaCarro(carro, pessoa, listaPessoa);
 			carroPessoa();
 			break;
 		case 7:
@@ -144,7 +144,7 @@ public class Menu {
 					listaCarro.add(c);
 				}
 			}
-			LeituraEscrita.relatorioPessoaCarro(carro, listaPessoa);
+			LeituraEscrita.relatorioPessoaCarro(carro, pessoa, listaPessoa);
 			carroPessoa();
 			break;
 		case 0:
