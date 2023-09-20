@@ -7,7 +7,7 @@ Utilizando o banco de dados Detran-ST, ou Detran-Serratec, o projeto serve para 
 <img src="https://github.com/bordeguilherme/pooindividual/assets/141193384/dcada7ca-ad11-446f-abc5-f8bebff44133" width="500px" />
 </div>
 <div align="center">
-Diagrama UML
+Diagrama UML de Objetos
 </div>
 <div align="center">
 Relacionamento de cardinalidade de 1 para 0,N.
